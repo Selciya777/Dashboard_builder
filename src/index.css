@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.grid-blueprint {
+  background-size: calc(100% / 12) 60px; /* 12 columns */
+  background-image: 
+    linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-position: -1px -1px;
+}
+.react-grid-placeholder {
+  background: rgba(84, 189, 149, 0.1) !important;
+  border: 2px dashed #54bd95 !important;
+  border-radius: 12px !important;
+  opacity: 0.8 !important;
+  z-index: 10 !important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.grid-blueprint {
+  background-size: calc(100% / 12) 70px;
+  background-image: 
+    linear-gradient(to right, #f1f5f9 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, #f1f5f9 1.5px, transparent 1.5px);
+  background-position: -0.75px -0.75px;
+}
+
+.react-grid-placeholder {
+  background: rgba(84, 189, 149, 0.1) !important; /* Brand Green Opacity */
+  border: 2px dashed #54bd95 !important;           /* Halleyx Emerald */
+  border-radius: 12px !important;
+  opacity: 0.8 !important;
+  z-index: 10 !important;
+}
